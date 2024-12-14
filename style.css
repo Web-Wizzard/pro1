@@ -1,0 +1,505 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right:0;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    display: flex;
+    padding: 0px 7%;
+}
+nav{
+    margin-right: 5cm;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    float: left;
+    position: relative;
+    letter-spacing: 0.8px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+nav ul li a{
+    padding: 20px;
+    display: block;
+    text-decoration: none;
+    color:black;
+}
+nav ul li a:hover{
+    background-color: rgb(72, 162, 251);
+    color: white;
+}
+nav ul li ul{
+    position: absolute;
+    left: 0;
+    width: 190px;
+    display: none;
+
+}
+nav ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+nav ul li ul li ul{
+    left: 180px;
+    top: 0;
+}
+nav ul li:focus-within > ul,
+nav ul li:hover > ul{
+    display: initial;
+}
+#menu-bar{
+    display: none;
+}
+header label{
+    font-size: 20px;
+    color: black;
+    display: none;
+    cursor: pointer;
+}
+.menu{
+    height:0.7cm;
+}
+.logo{
+    width: 100px;
+}
+
+.bgimg img{
+    width: 100%;
+    opacity: 0.25;
+    filter: blur(4px);
+}
+.heading{
+    font-family: "Ubuntu" , sans-serif;
+    font-size: 35px;
+    letter-spacing: 1.5px;
+}
+.nametxt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.nametxt h1{
+    font-size: 64px;
+    letter-spacing: 8px;
+    font-family: "Playfair Display", serif;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 0.4cm;
+}
+.nametxt p{
+    color: rgba(255, 255, 255, 0.496);
+    letter-spacing: 0.7px;
+}
+.line{
+    background-color: rgb(109, 182, 255);
+    animation: line 00.5s;
+    height: 0.1cm;
+}
+.bott{
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    top:90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.bott p{
+    font-family: "Poppins", sans-serif;
+    width: 60%;
+    height:fit-content;
+    margin-top: 1cm;
+    letter-spacing: 0.5px;
+    line-height: 0.7cm;
+}
+@keyframes line {
+    0%{height: 0cm;}
+    100%{height:0.1cm;}
+}
+.set{
+    width: 100%;
+    height: 100%;
+}
+.pt1{
+    width: 50%;
+    float: left;
+}
+.pt1 img{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 2cm;
+    border-radius: 0.2cm;
+    
+}
+.pt2{
+    width: 50%;
+    float: left;
+}
+.pt2 p{
+    margin-top: 25%;
+    font-family: "Poppins" , serif;
+    letter-spacing: 1.2px;
+    width: 90%;
+    text-align: center;
+}
+.booknow{
+    height: 1cm;
+    width: 10cm;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    background-color: dodgerblue;
+    cursor: pointer;
+}
+.booknow:hover{
+    transform: scale(1.01);
+    box-shadow: 2px 3px 23px -3px rgba(112,112,112,1);
+    transition: 0.4s;
+}
+.febox{
+    height: 12cm;
+    float: left;
+    width: 31%;
+    border:2px solid rgba(0, 0, 0, .1);
+    border-radius: 0.25cm;
+    margin-left: 0.5cm;
+}
+.febox i{
+    font-size: 45px;
+    margin-top: 1.5cm;
+    margin-bottom: 1.25cm;
+    color: rgb(167, 211, 255);
+}
+.febox h3{
+    font-size: 22px;
+    letter-spacing: 0.7px;
+    margin-bottom: 0.75cm;
+}
+.febox p{
+    width: 85%;
+    text-align: justify;
+    letter-spacing: 1px;
+    color: rgb(105, 105, 105);
+    line-height: 0.7cm;
+}
+.febox:hover{
+    transform: scale(1.04);
+    transition: 0.2s;
+    border-color: dodgerblue;
+}
+.febox:hover > i{
+    color: dodgerblue;
+}
+.rosec1{
+    width: 50%;
+    height: 100%;
+}
+.rosec1 p{
+    width: 90%;
+    margin-left: 5%;
+    letter-spacing: 1.2px;
+    line-height: 0.7cm;
+    float: left;
+    word-spacing: 3px;
+    margin-top: 2cm;
+
+}
+.rosec2{
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+}
+.imgdiv{
+    width: 15cm;
+   margin-left: 1.5cm;
+    height: 10cm;
+}
+.imgdiv .firstsec img{
+    width: 7cm;
+    border-radius: 0.3cm;
+    float: left;
+    margin-left: 0.25cm;
+}
+.imgdiv .sec2 img{
+    width: 14.25cm;
+    float: left;
+    margin-top: 0.5cm;
+    margin-left: 0.25cm;
+}
+.sto h1{
+    font-family: "Playfair Display", serif;
+    font-weight: 200;
+    letter-spacing: 15px;
+     font-size: 70px;
+}
+.sto p{
+    font-family: "Poppins",serif;
+    width: 70%;
+    margin-top: 0.6cm;
+    letter-spacing: 3px;
+    font-size: 20px;
+    color: rgb(70, 70, 70);
+}
+.foot{
+    background-color: #3265ac;
+    height: 10cm;
+    width: 100%;
+    
+}
+.foot .text{
+    float: left;
+    width: 400px;
+    color: wheat;
+    margin: 1cm;
+    word-spacing: 0.1cm;
+    letter-spacing: 1px;
+    margin-top: 1.5cm;
+    font-size: 17px;
+
+}
+.map{
+    float: left;
+}
+.map iframe{
+    margin-top: 1.5cm;
+    height: 7cm;
+    width: 350px;
+}
+.foot .links{
+    float: left;
+    width: 7cm;
+}
+.links h2{
+    margin: 1cm;
+    margin-top: 1.5cm;
+    font-size: 26px;
+    color: white;
+    letter-spacing: 1.3px;
+}
+.foot .links p a{
+    text-decoration: none;
+    color: wheat;
+    font-size: 17px;
+    margin: 1cm;
+    margin-left:1.5cm;
+}
+.foot .links p{
+    margin-top: 0.5cm;
+}
+.foot .contact{
+    float: left;
+}
+.foot .contact a{
+    text-decoration: none;
+}
+.foot .contact h2{
+    margin: 1.2cm;
+    margin-top: 1.5cm;
+    font-size: 26px;
+    color: white;
+    letter-spacing: 1.3px;
+}
+.foot .contact i{
+    float: left;
+    font-size: 30px;
+    color: wheat;
+}
+.foot .contact p{
+    margin-left: 1.3cm;
+    width: 8cm;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: white;
+}
+.ico , .pb{
+    float: left;
+}
+.pb p{
+    margin: 0.5cm;
+    font-size: 17px;
+}
+.ico{
+    margin-left: 40%;
+}
+.ico i{
+    margin-left: 1cm;
+    margin-bottom: 1cm;
+    margin-top: 0.2cm;
+    font-size:30px;
+    cursor: pointer;
+    color: var(--pur);
+}
+.ico i:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+
+@media only screen and (max-width:700px){
+    .set{
+        margin: 50px 0;
+        flex-direction:column;
+
+    }
+    header {
+        padding: 20px;
+    }
+    header label {
+        display: inline;
+    }
+    header nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(219, 255, 246);
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        display: none;
+        max-height: 80vh; /* Set a max height for the menu */
+        overflow-y: auto; /* Enable vertical scrolling */
+    }
+    header nav ul li {
+        width: 100%;
+    }
+    header nav ul li ul {
+        position: relative;
+        left: 30px;
+    }
+    header nav ul li ul li ul {
+        width: 100%;
+        left: 45px;
+    }
+    nav {
+        margin-right: 0;
+    }
+    #menu-bar:checked ~ nav{
+        display: initial;
+    }
+
+    .bgimg img{
+        height: 100%;
+        width: auto;
+    }
+    .pt1{
+        margin-bottom:50px ;
+        width: 100%;
+    }
+    .pt1 img{
+        width: 95%;
+        margin-left: 2.5%;
+        margin-top: 20px;
+    }
+    .pt2{
+        width: 100%;
+    }
+    .pt2 p{
+        margin-top: 0;
+        width: 94%;
+        margin-left: 3%;
+    }
+    .nametxt h1{
+        font-size: 50px;
+        margin-bottom: 0.5cm;
+        letter-spacing: 5px;
+    }
+    .nametxt p{
+        width: 120%;
+        margin-left: -10%;
+    }
+    .bott{
+        position:initial;
+        transform: none;
+    }
+    .bott p{
+        
+        width: 90%;
+    }
+    .booknow{
+        width: 90%;
+        margin: 0cm;
+    }
+    .febox{
+        width: 94%;
+        margin-left: 3%;
+        margin-bottom: 0.75cm;
+    }
+    .rosec1{
+        width: 100%;
+        float: left;
+        margin-bottom: 1cm;
+        height: max-content;
+    }
+    .rosec1 p{
+        margin-top: 0cm;
+    }
+    .rosec2{
+        width: 100%;
+        display:initial;
+        height: max-content;
+    }
+    .imgdiv{
+        margin-left: 0cm;
+    }
+    .imgdiv .firstsec img{
+       width: 35%;
+    }
+    .imgdiv .sec2 img{
+        width: 70%;
+    }
+    .foot{
+        height: 38cm;
+    }
+    .foot .contact{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .foot .links{
+        width: 100%;
+    }
+    .foot .map{
+        width: 100%;
+    }
+    .foot .map iframe{
+        width: 95%;
+    }
+    .foot .text p{
+        width:95%;
+        margin-left: -1.5cm;
+    }
+    .ic{
+        display: block;
+    }
+    .ico{
+        margin-left: 12%;
+        margin-top: 0.2cm;
+    }
+    .sto h1{
+        letter-spacing: 10px;
+         font-size: 65px;
+    }
+    .sto p{
+        font-family: "Poppins",serif;
+        width: 90%;
+        margin-bottom: 0.6cm;
+        letter-spacing: 1.5px;
+        font-size: 18px;
+    }
+}
